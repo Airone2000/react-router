@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 const Menu = () => (
   <ul>
     <li>
-      <Link to="/" exact={true}>Home</Link>
+      <Link to="/">Home</Link>
     </li>
     <li>
       <Link to="/about">
