@@ -5,6 +5,7 @@ import Home from './Home';
 import About from './About';
 import AboutMe from './AboutMe';
 import AboutContact from './AboutContact';
+import SubSite from './SubSite';
 
 const App = () => (
   <Router>
@@ -18,6 +19,7 @@ const App = () => (
       <Route path="/about" component={About} />
       <Route path="/about/me" component={AboutMe} />
       <Route path="/about/contact" component={AboutContact} />
+      <Route path="/more" component={SubSite} />
     </React.Fragment>
   </Router>
 );

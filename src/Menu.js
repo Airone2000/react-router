@@ -7,8 +7,10 @@ const Menu = () => (
       <Link to="/">Home</Link>
     </li>
     <li>
-      <Link to="/about">
-        About
+      <Link to="/more">Subsite</Link>
+    </li>
+    <li>
+      <Link to="/about">About</Link>
         <ul>
           <li>
             <Link to="/about/me">About me</Link>
@@ -17,7 +19,7 @@ const Menu = () => (
             <Link to="/about/contact">Contact</Link>
           </li>
         </ul>
-      </Link>
+      
     </li>
   </ul>
 );
