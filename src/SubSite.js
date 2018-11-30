@@ -5,12 +5,18 @@ const Sujet = ({match}) => {
   return (<div>{match.params.id}</div>);
 };
 
-const SubSite = ({match}) => {
+const SubSite = ({match, ...rest}) => {
+
+  const props = {
+    color: 'red',
+    size: '12px'
+  };
+
   return (
     <div>
       <ul>
         <li>
-          <Link to={`${match.path}/sujet-1`}>Sujet 1</Link>
+          <Link {...props} to={`${match.path}/sujet-1`}>Sujet 1</Link>
         </li>
         <li>
           <Link to={`${match.path}/sujet-2`}>Sujet 2</Link>
